@@ -1,0 +1,44 @@
+
+.row{
+    margin-top: 30px;
+    height: 50px;
+    width: 110%;
+        
+}
+.col{
+    height: 100%;
+    background-color: red;
+    font-size: medium;
+        
+}
+.text{
+    margin-top: 13px;
+    color: aliceblue;
+}
+
+/* TEXT COLOR */
+.c1{
+    background-color: rgb(129, 129, 238);
+    box-shadow: 0px 2px 2px rgb(22, 71, 177);
+}
+.c2{
+    background-color: rgb(255, 103, 103);
+    box-shadow: 0px 2px 2px rgb(226, 56, 26);
+}
+.c3{
+    background-color: rgb(86, 190, 86);
+    box-shadow: 0px 2px 2px rgb(44, 138, 15);
+}
+.c4{
+    background-color: rgb(238, 235, 64);
+    box-shadow: 0px 2px 2px rgb(194, 197, 15);
+}
+.c5{
+    background-color: rgb(247, 157, 84);
+    box-shadow: 0px 2px 2px rgb(212, 101, 26);
+}
+.c6{
+    background-color: rgb(243, 184, 194);
+    box-shadow: 0px 2px 2px rgb(231, 99, 180);
+}
+

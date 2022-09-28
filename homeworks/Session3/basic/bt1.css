@@ -1,0 +1,107 @@
+.row{
+    height: 40px;
+    width: 90%;
+    margin:20px;
+    display: flex;
+    
+}
+
+.left{
+    height: 100%;
+    width: 30%;
+
+    /* background-color: brown; */
+    display: flex;
+}
+
+.right{
+    height: 100%;
+    width: 80%;
+    background-color: rgb(221, 222, 223);
+
+}
+
+.percent{
+        height: 100%;
+        display: flex;
+    
+}
+
+.text{
+    /* margin-left: 10px; */
+    /* margin-right: 10px; */
+    /* margin-top: 13px; */
+    /* margin-bottom: 10px; */
+    margin: auto;
+    font-size: 90%;
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.left .text {
+    margin-right: 10%;
+}
+.right .text{
+    margin-left: 10%;
+}
+
+/* BACKGROUND COLOR LEFT COL */
+.l1{
+    background-color: brown;
+}
+
+.l2{
+    background-color: rgb(19, 95, 196);
+}
+.l3{
+    background-color: rgb(42, 165, 73);
+}
+.l4{
+    background-color: rgb(255, 215, 37);
+}
+.l5{
+    background-color: rgb(121, 65, 158);
+}
+.l6{
+    background-color: rgb(184, 22, 157);
+}
+.l7{
+    background-color: rgb(73, 75, 206);
+}
+
+
+
+/* BACKGROUND COLOR RIGHT COL */
+.p1{
+    background-color:rgb(243, 49, 49) ;
+    width: 20%;
+}
+.p2{
+    background-color:rgb(20, 137, 233) ;
+    width: 50%;
+}
+.p3{
+    background-color:rgb(32, 209, 85) ;
+    width: 70%;
+}
+.p4{
+    background-color:rgb(245, 230, 20) ;
+    width: 30%;
+}
+.p5{
+    background-color:rgb(160, 70, 245) ;
+    width: 45%;
+}
+.p6{
+    background-color:rgb(223, 59, 173) ;
+    width: 80%;
+}
+.p7{
+    background-color:rgb(80, 122, 214) ;
+    width: 37%;
+}
+
+
+
+
+

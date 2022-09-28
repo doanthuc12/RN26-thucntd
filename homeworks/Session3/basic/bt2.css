@@ -1,0 +1,107 @@
+
+.box {
+    width: 800px;
+    height: 700px;
+    margin-left: 20%;
+    background-color: rgba(215, 242, 255, 0.692);
+    position: absolute;
+}
+.box>*{
+    position: relative;
+    top: 5%;
+    left: 5%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.up {
+    width: 90%;
+    height: 40%;
+    background-image: url("./picture/nền\ \(2\).jpg");
+    background-size:cover;
+    
+    
+}
+
+.down {
+    width: 90%;
+    height: 50%;
+    background-color: rgb(255, 255, 255);
+
+    
+}
+
+.info {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    top: 50%;
+}
+.info img {
+    height: 47%;
+    margin-left: 5%;
+    width: auto;
+    border-radius: 50%;
+       
+}
+
+
+.name {
+    width: 70%;
+    height: 100%;
+    color: rgb(255, 255, 255);
+    margin-left: 50px;
+    
+}
+
+.dbox {
+    width: 100%;
+    height: 20%;
+    border: 1px solid rgb(214, 205, 205);
+    box-sizing: border-box;
+    display: flex;
+    position: relative;
+
+    
+    
+}
+
+.dbox>h4 {
+    margin: auto;
+    color: rgb(132, 128, 128);
+    font-size:larger;
+    margin-left: 40px;
+}
+
+.num {
+    position: relative;
+    height: 60%;
+    width:10%;
+    margin: auto;
+    margin-right: 8%;
+    display: flex;
+    border-radius: 7%;
+   }
+
+.num h4 {
+    margin: auto; 
+    font-size: large;
+    color: rgb(255, 255, 255);
+}
+
+.c1 {
+    background-color: rgba(255, 67, 67, 0.8);
+   
+}
+.c2 {
+    background-color: rgba(67, 67, 228, 0.834);
+}
+.c3 {
+    background-color: rgba(41, 139, 41, 0.814);
+}
+.c4 {
+    background-color: rgb(235, 177, 43);
+}
+.c5 {
+    background-color: rgba(114, 14, 114, 0.789);
+}
