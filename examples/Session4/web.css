@@ -1,0 +1,43 @@
+.header{
+    background-color: rgb(241, 233, 233);
+    height:100px;
+    padding-top: 23px;
+    padding-bottom: 10p;
+    margin: 10px;
+}
+
+
+.col{
+margin:5%;
+margin-bottom:30px ;
+
+}
+.col-3{
+    height: 90%;
+    width: 50%;
+    margin-top: 10px;
+    padding: 0px;
+}
+.col-3 h1, p {
+    
+    padding-left: 20px;
+}
+.c3{
+    background-color: rgb(178, 217, 233);
+}
+h6{
+    font-size: large;
+    border-bottom: 2px solid rgb(238, 238, 238);
+    margin: 10%;
+    text-align: left;
+}
+.footer{
+    height: 50px;
+    background-color: rgb(241, 233, 233);
+    text-align: center;
+    margin-top: 10px;
+    padding-top: 7px;
+}
+.col-6{
+    padding-left: 0px;
+}

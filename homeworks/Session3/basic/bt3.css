@@ -2,11 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-html {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+/* html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+} */
 
 .main {
     width: 100%;

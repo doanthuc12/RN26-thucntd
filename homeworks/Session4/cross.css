@@ -1,0 +1,23 @@
+
+.cross{
+    
+    width: 400px;
+    height:20px;  
+    
+ 
+}
+.box {
+    padding:0px;
+    border: 0px;
+    width: 400px;
+    position: relative;
+    bottom: 5px;
+   
+
+}
+svg{
+    width: inherit;
+    height: auto;
+    
+    
+}
