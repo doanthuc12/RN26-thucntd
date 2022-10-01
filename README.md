@@ -128,3 +128,8 @@ Cách 2: Chèn link ở thư mục Bootstrap đã tải về:
 #ICON
 - Chèn link source: <script src="https://kit.fontawesome.com/042e59ddf7.js" crossorigin="anonymous"></script>
 - Web: fontawesome.com
+
+#ANIMATION
+- C1: CHÈN LINK TRỰC TIẾP VÀO <HEAD>: https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css
+- C2: Mở link đã chèn trong C1 --> copy path --> tạo file ANIMATION.MIN.CSS --> dán path vào và link với file HTML
+
