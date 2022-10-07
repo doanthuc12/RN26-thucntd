@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User form</title>
+    <link
+      rel="stylesheet"
+      href="./bootstrap-4.6.2-dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./header.css" />
+    <link rel="stylesheet" href="./web.css" />
+  </head>
+  <body>
+    <div class="header animate__animated animate__fadeIn">
+      <a class="animate__animated animate__zoomIn" href="./home.html">Home</a>
+      <a class="animate__animated animate__zoomIn" href="./list.html"
+        >User List</a
+      >
+      <a class="animate__animated animate__zoomIn" href="./form.html"
+        >User Form</a
+      >
+    </div>
+
+    <!-- FORM -->
+    <div class="container">
+      <div class="box">
+        <a>Username</a>
+        <div class="input">
+          <input
+            type="text"
+            name="email"
+            id="email"
+            placeholder="Email hoặc số điện thoại"
+          />
+        </div>
+
+        <a>Password</a>
+        <div class="input">
+          <input type="password" name="pass" id="pass" placeholder="Mật khẩu" />
+        </div>
+
+        <form>
+          <input
+            style="background-color: brown; margin-left: 130px; border: none; padding: 19px;"
+            type="submit"
+            value="Login"
+            onclick="alert('Xác nhận đăng nhập.');"
+          />
+        </form>
+      </div>
+    </div>
+
+    <div class="fixed-bottom footer">
+      <p>
+        This web page is a part of a demonstration of fluid web design made by
+        www.w3schools.com. Resize the browser window to see the content response
+        to the resizing.
+      </p>
+    </div>
+
+    <script src="./bootstrap-4.6.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./bootstrap-4.6.2-dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

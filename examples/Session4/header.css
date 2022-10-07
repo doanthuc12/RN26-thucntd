@@ -1,0 +1,29 @@
+.header{
+    background-color: rgb(241, 233, 233);
+    height:60px;
+    text-align: right;
+    padding-top: 15px;
+    /* text-decoration: none; */
+    
+
+}
+a{
+    margin-right: 20px;
+    font-size: large;
+    /* text-decoration: none; */
+}
+a:hover{
+    text-decoration: none;
+}
+
+.footer{
+    
+    height: 50px;
+    background-color: rgb(241, 233, 233);
+    text-align: center;
+    padding-top: 7px;
+}
+
+P{
+    margin-top: 8px;
+}
