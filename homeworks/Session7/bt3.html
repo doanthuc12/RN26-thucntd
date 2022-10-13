@@ -12,18 +12,21 @@
       <button onclick="handleprint()">Print</button>
     </form>
     <script>
+
+      
       function handleprint() {
-        var a = "*";
-        b = " ";
+        
+        
         let h = document.getElementById("chieu__cao");
         console.log("Chiều cao h =", h.value);
 
+        let res = "";
         for (let i = 0; i <= h.value; i++) {
-          for (let j = 0; j < i; j++) {
-            console.log(a);
+          for (let j = 0; j < i; j++)res +="*"; {
+            console.log(res);
           }
 
-          console.log(b);
+          console.log();
         }
       }
     </script>
