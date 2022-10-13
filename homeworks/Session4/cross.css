@@ -1,21 +1,21 @@
 
 .box {
-    padding:0px;
-    border: 0px;
-    width: 400px;
-    height: 20px;
-    
-   display: block;
- 
+    background:
+    linear-gradient(to top   right,transparent 49.8%,#fff 50%) top    -1px right -1px,
+    linear-gradient(to bottom left,transparent 49.8%,#fff 50%) bottom -1px left  -1px,
+    rgb(10, 10, 10);
+  
+  background-repeat:no-repeat;
 
 
 }
-svg{
+/* svg{
     width: 138%;
     height: 48px; }
 
 .line{
     display: inline-block;
     fill: none;
-}
+} */
+
    

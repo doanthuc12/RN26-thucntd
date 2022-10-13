@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dãy fibonacci</title>
+  </head>
+  <body>
+    <form onsubmit="return false">
+      <input type="number" placeholder="Nhập giá trị của dãy Fibonacci" id="input__number" />
+      <button onclick="handlecheck()">Print</button>
+    </form>
+
+    <script>
+      function handlecheck() {
+        let 
+          a = document.getElementById("input__number");
+        console.log("Giới hạn của dãy Fibonacci:",a.value)
+
+        let n1=0,
+        n2=1,
+        z=n1+n2;
+        console.log(n1);
+        console.log(n2);
+        
+        for (let i = 0; i <= 10; i++) {
+            console.log(z)
+
+            n1=n2;
+            n2=z;
+            z=n1+n2;
+
+            if (z>a.value) {
+                break;
+            }
+        }
+        
+      }
+   
+    </script>
+  </body>
+</html>

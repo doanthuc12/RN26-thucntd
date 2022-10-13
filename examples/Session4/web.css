@@ -68,7 +68,9 @@ input{
     border:none;
     background-color: rgb(202, 221, 240);
     margin-bottom: 15px;
+    display: flex;
 }
+
 
 
 form{

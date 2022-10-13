@@ -26,29 +26,50 @@
     <!-- FORM -->
     <div class="container">
       <div class="box">
-        <a>Username</a>
-        <div class="input">
-          <input
-            type="text"
-            name="email"
-            id="email"
-            placeholder="Email hoặc số điện thoại"
-          />
-        </div>
+        <form onsubmit="return false">
+          <a>Username</a>
 
-        <a>Password</a>
-        <div class="input">
-          <input type="password" name="pass" id="pass" placeholder="Mật khẩu" />
-        </div>
+          <div class="input">
+            <input
+              type="text"
+              name="email"
+              id="email"
+              placeholder="Email hoặc số điện thoại"
+            />
+          </div>
 
-        <form>
+          <label>Password</label>
+          <!-- <a>Password</a> -->
+          <div class="input">
+            <input
+              type="password"
+              name="pass"
+              id="pass"
+              placeholder="Mật khẩu"
+            />
+          </div>
+
           <input
-            style="background-color: brown; margin-left: 130px; border: none; padding: 19px;"
+            style="
+              background-color: brown;
+              margin-left: 130px;
+              border: none;
+              padding: 19px;
+            "
+            onclick="handlesubmit()"
             type="submit"
-            value="Login"
-            onclick="alert('Xác nhận đăng nhập.');"
+            value="Submit"
           />
         </form>
+
+        <script>
+          function handlesubmit() {
+            let inputEmail = document.getElementById("email");
+            console.log('Email đã nhập:',inputEmail.value);
+            let inputPassword = document.getElementById("pass");
+            console.log('Pass đã nhập:',inputPassword.value);
+          }
+        </script>
       </div>
     </div>
 
