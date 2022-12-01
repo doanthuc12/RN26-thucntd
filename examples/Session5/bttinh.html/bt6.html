@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UCLN</title>
+  </head>
+  <body>
+    <form onsubmit="return false">
+      <button onclick="handlebtn()">Click here.</button>
+    </form>
+
+    <script language="Javascript">
+      function handlebtn() {
+        let i = prompt("Nhap so nguyen m");
+        let j = prompt("nhap so nguyen n");
+        let m = parseInt(i);
+        let n = parseInt(j);
+        console.log("So nguyen:", n, m);
+
+        function UCLN(x, y) {
+          
+          while (x != y) {
+            if (x > y) x = x - y;
+            else y = y - x;
+          }
+          return x;
+        }
+        console.log("UCLN =", UCLN(m, n));
+      }
+    </script>
+  </body>
+</html>

@@ -7,13 +7,15 @@
     <title>User form</title>
     <link
       rel="stylesheet"
-      href="./bootstrap-4.6.2-dist/css/bootstrap.min.css"
+      href="./bootstrap-5.2.1-dist/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="./header.css" />
     <link rel="stylesheet" href="./web.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
   </head>
   <body>
-    <div class="header animate__animated animate__fadeIn">
+    <!-- <div class="header animate__animated animate__fadeIn">
       <a class="animate__animated animate__zoomIn" href="./home.html">Home</a>
       <a class="animate__animated animate__zoomIn" href="./list.html"
         >User List</a
@@ -21,7 +23,8 @@
       <a class="animate__animated animate__zoomIn" href="./form.html"
         >User Form</a
       >
-    </div>
+    </div> -->
+    <header></header>
 
     <!-- FORM -->
     <div class="container">
@@ -68,7 +71,28 @@
             console.log('Email đã nhập:',inputEmail.value);
             let inputPassword = document.getElementById("pass");
             console.log('Pass đã nhập:',inputPassword.value);
+            let objectUser = {
+                name: inputEmail?.value,
+                
+            }
+            // console.log(objectUser);
+            postData(objectUser)
+            return false;
           }
+          function postData(user) {
+            fetch("https://634ea35d4af5fdff3a62d2a4.mockapi.io/api/v1/users", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(user),
+            })
+                .then((response) => response.json())
+                .then((res) => console.log(res))
+                .catch((error) => {
+                    console.error("Error:", error);
+                });
+        }
         </script>
       </div>
     </div>
@@ -80,8 +104,9 @@
         to the resizing.
       </p>
     </div>
-
-    <script src="./bootstrap-4.6.2-dist/js/bootstrap.bundle.min.js"></script>
-    <script src="./bootstrap-4.6.2-dist/js/bootstrap.min.js"></script>
+    <script src="./home.js"></script>
+    
+    <script src="./bootstrap-5.2.1-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./bootstrap-5.2.1-dist/js/bootstrap.min.js"></script>
   </body>
 </html>

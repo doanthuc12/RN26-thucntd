@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HOME PAGE</title>
+    <link
+      rel="stylesheet"
+      href="./bootstrap-5.2.1-dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="./Css/web.css" />
+    <style></style>
+  </head>
+
+  <body>
+    <div class="div__container">
+      <!-- header -->
+      <iframe
+        class="w-100"
+        style="height: 70px"
+        src="./header.html"
+        seamless
+      ></iframe>
+
+      <!-- contain -->
+
+      <!-- FORM -->
+      <div class="container">
+        <div class="box">
+          <form id="info" class="w-75 m-auto mt-3" onsubmit="return false">
+            <div class="mb-3">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-person-square"
+                viewBox="0 0 16 16"
+              >
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                <path
+                  d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1v-1c0-1-1-4-6-4s-6 3-6 4v1a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12z"
+                />
+              </svg>
+              <label style="padding-bottom: 20px">DETAIL</label>
+              <div id="info"></div>
+            </div>
+            <button onclick ="gotoForm()" class="btn btn-warning">Update</button>
+          </form>
+
+          <script>
+            function gotoForm() {
+              let id = getIdUrl();
+              gotoFormURL(id);
+            }
+            function gotoFormURL(id) {
+              window.location.href = `./form.html?id=${id}`;
+            }
+          </script>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <iframe
+      class="w-100"
+      style="height: 70px"
+      src="./footer.html"
+      seamless
+    ></iframe>
+
+    <!-- script -->
+    <script src="./bootstrap-5.2.1-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./bootstrap-5.2.1-dist/js/bootstrap.min.js"></script>
+    <script src="./Js/detail.js"></script>
+    <!-- <script src="./Js/form.js"></script> -->
+  </body>
+</html>

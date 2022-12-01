@@ -1,0 +1,56 @@
+/* HOME */
+.item{
+    border-bottom: 1px solid ;
+}
+/* FORM */
+.container{
+    
+    width: 700px;
+    height: 450px;
+    font-family: inherit;
+}
+.box{
+    padding-bottom: 30px;
+    width: 100%;
+    background-color: rgb(240, 240, 240);
+    border-radius: 5px;
+    box-shadow: 5px 5px rgb(125 125 125 / 24%);
+    text-align: left;
+}
+input{
+    
+    height: 27px;
+    padding: 20px;
+    border-radius: 5px;
+    border:none;
+    background-color: rgb(202, 221, 240);
+    margin-bottom: 15px;
+    display: flex;
+}
+form{
+    padding-top: 20px;
+    font-size: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+.myForm{
+    text-align: left;
+}
+
+/* LIST */
+.table{
+    height: 400px;
+}
+/* DETAIL */
+#info{
+    text-align: left;
+    padding-bottom: 30px;
+    width: 100%;
+    background-color: rgb(165, 204, 241);
+    border-radius: 5px;
+    padding-top: 10px;
+}
+label{
+color: brown;
+font-size: large;
+}

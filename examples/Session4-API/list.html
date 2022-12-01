@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User list</title>
+    <link
+      rel="stylesheet"
+      href="./bootstrap-5.2.1-dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./header.css" />
+    <link rel="stylesheet" href="./web.css" />
+  </head>
+  <body>
+    <!-- <div class="header animate__animated animate__fadeIn">
+      <a class="animate__animated animate__zoomIn" href="./home.html">Home</a>
+      <a class="animate__animated animate__zoomIn" href="./list.html"
+        >User List</a
+      >
+      <a class="animate__animated animate__zoomIn" href="./form.html"
+        >User Form</a
+      >
+    </div> -->
+    <header></header>
+
+    <!-- TABLE -->
+    <div class="table" style="width: 60%; margin: auto; margin-top: 20px">
+      <table id="table_users" class="table table-dark">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <!-- <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td style="width: 25%">
+              <div class="button" style="text-align: right">
+                <button
+                  style="background-color: rgb(54, 117, 29); border-radius: 13%"
+                >
+                  <a style="color: white; font-size: medium; margin-right: 0"
+                    >Detail</a
+                  >
+                </button>
+
+                <button
+                  style="background-color: rgb(211, 82, 50); border-radius: 13%"
+                >
+                  <a style="color: white; font-size: medium; margin-right: 0"
+                    >Delete</a
+                  >
+                </button>
+              </div>
+            </td> -->
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="fixed-bottom footer">
+      <p>
+        This web page is a part of a demonstration of fluid web design made by
+        www.w3schools.com. Resize the browser window to see the content response
+        to the resizing.
+      </p>
+    </div>
+
+    <script src="./bootstrap-5.2.1-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./bootstrap-5.2.1-dist/js/bootstrap.min.js"></script>
+    <script src="./list.js"></script>
+    <script>
+      var tableRefTemp = document
+        .getElementById("table_users")
+        .getElementsByTagName("tbody")[0];
+      console.log(tableRefTemp);
+    </script>
+    <script src="./home.js"></script>
+    <script src="../Session11/Jquery/jquery.min.js"></script>
+    
+  </body>
+</html>

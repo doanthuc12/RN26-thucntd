@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>So nguyen x</title>
+  </head>
+  <body>
+    <form onsubmit="return false">
+      <button onclick="handlebtn()">Click here.</button>
+    </form>
+
+    <script>
+      function handlebtn() {
+        let a = prompt("Nhap so a");
+        b = prompt("nhap so b");
+        c = prompt("Nhap so c");
+        d = prompt("Nhap so d");
+        console.log("Day so:", a, b, c, d);
+        let min = a;
+        if (b < min) min = b;
+        if (c < min) min = c;
+        if (d < min) min = d;
+
+        console.log("Min=", min);
+      }
+    </script>
+  </body>
+</html>

@@ -133,3 +133,15 @@ Cách 2: Chèn link ở thư mục Bootstrap đã tải về:
 - C1: CHÈN LINK TRỰC TIẾP VÀO <HEAD>: https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css
 - C2: Mở link đã chèn trong C1 --> copy path --> tạo file ANIMATION.MIN.CSS --> dán path vào và link với file HTML
 
+
+#Interview:
+Css: thứ tự ưu tiên Imporrtant - Inline -  in/external
+JS:
+Có bn cách clone một obj
+- clone nông và clone sâu
+- closure?
+
+hoiiting JS?
+
+API:
+promiseAll: 

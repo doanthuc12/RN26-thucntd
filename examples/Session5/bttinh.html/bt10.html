@@ -1,0 +1,36 @@
+html<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mua xăng</title>
+  </head>
+  <body>
+    <form onsubmit="return false">
+      <button onclick="handlebtn()">Click here.</button>
+    </form>
+
+    <script language="Javascript">
+      function handlebtn() {
+        let NValue = prompt("Nhập số xăng cần mua:");
+        let N = parseInt(NValue)
+        console.log("N =");
+        let aValue = prompt("Giá 1L xăng:");
+        let bValue = prompt("Giá 1L xăng:");
+        let a = parseInt(aValue);
+        let b = parseInt(bValue);
+        console.log("a, b=", a, b);
+
+
+        if (b>2*a) {
+            console.log('Số tiền tối thiểu',N*parseInt())
+
+        }
+        if (b<=2*a) {
+            console.log('Số tiền tối thiểu',parseInt(N/2)*b )
+        }
+      }
+    </script>
+  </body>
+</html>

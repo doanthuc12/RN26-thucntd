@@ -61,7 +61,7 @@ tr:nth-child(odd) {background-color: rgb(73, 62, 45);}
 
 }
 input{
-    width: 90%;
+    /* width: 90%; */
     height: 20px;
     padding: 20px;
     border-radius: 5px;

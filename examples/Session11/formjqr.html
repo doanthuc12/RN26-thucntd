@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jquery Form</title>
+
+    <style>
+      input {
+        /* width: 90%; */
+        height: 20px;
+        padding: 20px;
+        border-radius: 5px;
+        border: none;
+        background-color: rgb(202, 221, 240);
+        margin-bottom: 15px;
+        display: flex;
+      }
+
+      form {
+        /* width: 110px; */
+        padding-top: 20px;
+        font-size: 20px;
+        border-radius: 5px;
+      }
+    </style>
+    <!-- Bootstrap -->
+    <!-- CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <!-- SCRIPT -->
+    <!-- <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script> -->
+    <script src="./Jquery/jquery.min.js"></script>
+    <script src="./Jquery/jquery.validate.min.js"></script>
+
+    <style>
+        .error {
+          color: red;
+        }
+      </style>
+  </head>
+
+  <body>
+    <!-- FORM -->
+    <div class="container">
+      <form id="myForm">
+        <label>Email</label>
+
+        <div class="input">
+          <input
+            type="text"
+            name="email"
+            id="email"
+            placeholder="Email hoặc số điện thoại"
+          />
+        </div>
+
+        <label>Password</label>
+        <!-- <a>Password</a> -->
+        <div class="input">
+          <input
+            type="password"
+            name="password"
+            id="pass"
+            placeholder="Mật khẩu"
+          />
+        </div>
+        <button type="submit" class="btn btn-primary">SUBMIT</button>
+      </form>
+    </div>
+
+    <!-- <script src="./bootstrap-5.2.1-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./bootstrap-5.2.1-dist/js/bootstrap.min.js"></script> -->
+    <script>
+      var settings = {
+        rules: {
+          email: {
+            required: true,
+            email: true,
+            rangelength: [6, 12],
+          },
+
+          password: {
+            required: true,
+            password: true,
+            rangelength: [6, 12],
+          },
+        },
+        messages: {
+          email: {
+            required: "Bạn chưa nhập email",
+            minlength: jQuery.validator.format("Toi thieu co {0} ky tu"),
+            email: "Dia chi email khong hop le",
+          },
+          password: {
+            required: "Bạn chưa nhập password",
+            minlength: jQuery.validator.format("Toi thieu co {0} ky tu"),
+            password: "Password khong hop le",
+          },
+        },
+      };
+
+      var validator = $("#myForm").validate(settings);
+    </script>
+  </body>
+</html>

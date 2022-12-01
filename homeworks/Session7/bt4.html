@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docum<!DOCTYPE html>
+        <html lang="en">
+          <head>
+            <meta charset="UTF-8" />
+            <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <title>Tam giác đều</title>
+          </head>
+          <body>
+            <form onsubmit="return false">
+              <input type="number" placeholder="Nhập chiều cao h:" id="chieu__cao" />
+              <button onclick="handleprint()">Print</button>
+            </form>
+            <script>
+              function handleprint() {
+                let h = document.getElementById("chieu__cao");
+                let number = parseInt(h.value) //Doi kieu cua bien h.value (string--> number)
+                console.log("Chiều cao h =", h.value);
+                console.log(typeof number); //test kieu bien cua number
+                for (let i = 1; i <= number; i++) {
+                    let space="";
+                    for (let indexSpace = 0; indexSpace <= number - i; indexSpace++) {
+                        space += " ";                        
+                    }
+
+                    let star = "";
+                    for (let  indexStar= 1;  indexStar<= 2 * i - 1; indexStar++) {
+                        star +="*";   
+                    }
+                    console.log(space + star);
+
+                }
+            }
+                
+            </script>
+          </body>
+        </html>
+        </title>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upper Lower sentence</title>
+  </head>
+  <body>
+    <form onsubmit="return false">
+      <button onclick="handlebtn()">Click here.</button>
+    </form>
+
+    <script>
+      function handlebtn() {
+        let sentence = prompt("Nhập lời nhắn : ");
+        console.log("Sentence :", sentence);
+
+        function titleCase() {
+          let splitSentence = sentence.toLowerCase().split(" "); //Tách chuỗi bằng split() với một ký tự phân tách "(vd:dấu cách,phẩy...)"
+          console.log("Single words:", splitSentence);
+
+          for (var i = 0; i < splitSentence.length; i++) {
+            splitSentence[i] =
+              splitSentence[i][0].toUpperCase() + splitSentence[i].slice(1);
+          }
+
+          return splitSentence.join(" ");
+        }
+        let result = titleCase();
+        console.log("Result", result);
+      }
+    </script>
+  </body>
+</html>

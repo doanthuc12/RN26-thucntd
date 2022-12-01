@@ -8,27 +8,23 @@
   </head>
   <body>
     <form onsubmit="return false">
-      <input
-        type="number"
-        placeholder="Nhập số vào đây"
-       
-        id="input__number"
-      />
+      <input type="number" placeholder="Nhập số vào đây" id="input__number" value="number"/>
       <button onclick="handlecheck()">Check</button>
     </form>
     <script>
       function handlecheck() {
         let a = document.getElementById("input__number");
-        
-        console.log("Số đã kiểm tra:",a.value);
+
+        console.log("Số đã kiểm tra:", a.value);
         if (a.value % 2 == 0) {
-        alert("Đây là số chẵn");
-      } else {
-        alert("Đây là số lẻ");
+          alert("Đây là số chẵn");
+        } else {
+          alert("Đây là số lẻ");
+        }
       }
-      }
-            
-      
     </script>
   </body>
 </html>
+
+
+<!-- REGEX -->

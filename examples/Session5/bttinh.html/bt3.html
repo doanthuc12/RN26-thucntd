@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>So nguyen x</title>
+  </head>
+  <body>
+    <form onsubmit="return false">
+      <input type="number" placeholder="Nhập so nguyen n:" id="so_nguyen" />
+      <button onclick="handleprint()">Print</button>
+    </form>
+    <script>
+      function handleprint() {
+        let n = document.getElementById("so_nguyen");
+        let number = parseInt(n.value);
+        console.log('Input:',number)
+        
+        let outPut =(number-1)/2
+
+        console.log('Output:',parseInt(outPut))
+      }
+    </script>
+  </body>
+</html>
